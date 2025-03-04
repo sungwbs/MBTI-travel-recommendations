@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>MBTI homepage</title>
+    <style>
+         #search{
+          left: 900px;
+          top:650px;
+          width: 200px;
+          height: 100px;
+          position: fixed;
+          border: solid; border-color: hotpink;}
+        #header div{position: fixed;
+            left: 1100px; top: 650px;}
+        body {
+            background-color: black;
+        }
+        img.test{
+            position: fixed;
+            left: 450px;
+            top: 800px;
+        }
+        img.test2{
+            position: fixed;
+            left: 750px;
+            top: 800px;
+        }
+        img.test3{
+            position: fixed;
+            left: 1050px;
+            top: 800px;
+        }
+        img.test4{
+            position: fixed;
+            left: 1350px;
+            top: 800px;
+        }
+        #earth {animation: rotate_image 6s linear infinite;transform-origin: 50% 50%; position: fixed;left: 600px; bottom: 200px;}
+
+@keyframes rotate_image{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+        
+    </style>
+</head>
+<body>
+    <img src="earth.png" id="earth"width="800"height="800">
+    <a href="검색/search.html"><img id="search" src="MBTI입력.png"></a>
+
+     <div id="header"><div>
+     <img src="돋보기.png" width="200"height="100">
+     </div> 
+    <a href="https://www.16personalities.com/ko/%EB%AC%B4%EB%A3%8C-%EC%84%B1%EA%B2%A9-%EC%9C%A0%ED%98%95-%EA%B2%80%EC%82%AC"><img src="MBTI검사.png" width="200" height="100" class="test"></a>
+    <a href="MBTI특징.html"><img src="MBTI특징.png" width="200" height="100"class="test2"></a>
+    <a href="공지사항 페이지.html"><img src="공지사항.png" width="200" height="100"class="test3"></a>
+    <a href="제작자 페이지.html"><img src="제작자.png" width="200" height="100" class="test4"></a>
+    <a href="index.html"><img id="home" src="home.png" width="200" height="100"></a>
+</body>
+</html>

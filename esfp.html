@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <title>슬라이드 연습</title>
+     <style media="screen">
+      *{
+        margin: 0; padding: 0;
+      }
+
+      .slide{
+        width: 1535px;
+        height: 750px;
+        overflow: hidden;
+        position: relative;
+        margin: 0 auto;
+        background-size: cover;
+
+      }
+      .slide ul{
+        width: 5000px;
+        position: absolute;
+        top:0;
+        left:0;
+        font-size: 0;
+      }
+      .slide ul li{
+        display: inline-block;
+      }
+      #back{
+        position: absolute;
+        top: 350px;
+        left: 0;
+        cursor: pointer;
+        z-index: 1;
+      }
+      #next{
+        position: absolute;
+        top: 350px;
+        right: 0;
+        cursor: pointer;
+        z-index: 1;
+      }
+     </style>
+  </head>
+  <body>
+    <div class="slide">
+      <img id="back" src="img/back.png" alt="" width="100">
+      <ul>
+        <li><a href="ESFP/ESFP-해외/ESFP해외.html"><img src="img/11.jpg" alt="" width="1535" height="750"></a></li>
+        <li><a href="ESFP/ESFP-국내/ESFP국내.html"><img src="img/12.png" alt="" width="1535" height="750"></a></li>
+        <li><a href="궁합/ESFP궁합.html"><img src="img/13.png" alt="" width="1535" height="750"></a></li>
+        
+      </ul>
+      <img id="next" src="img/next.png" alt="" width="100">
+    </div>
+  </body>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      var imgs;
+      var img_count;
+      var img_position = 1;
+
+      imgs = $(".slide ul");
+      img_count = imgs.children().length;
+
+      //버튼을 클릭했을 때 함수 실행
+      $('#back').click(function () {
+        back();
+      });
+      $('#next').click(function () {
+        next();
+      });
+
+      function back() {
+        if(1<img_position){
+          imgs.animate({
+            left:'+=1535px'
+          });
+          img_position--;
+        }
+      }
+      function next() {
+        if(img_count>img_position){
+          imgs.animate({
+            left:'-=1535px'
+          });
+          img_position++;
+        }
+      }
+    });
+  </script>
+</html>
