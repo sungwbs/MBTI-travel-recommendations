@@ -1,6 +1,6 @@
 # MBTI-travel-recommendations
 
-자세히 보기 [MBTI별 해외 여행지.pptx](https://github.com/user-attachments/files/19070101/MBTI.pptx)
+프로젝트 기획 및 초기 설계 내용 자세히 보기! [MBTI별 해외 여행지.pptx](https://github.com/user-attachments/files/19070101/MBTI.pptx)
 
 I. 목표 설정
    - 여행지를 고민하는 소비자들에게 본인 성향에 맞는 여행지를 MBTI별로 추천 해주면서 여행 만족도를 높이고 실패 확률을 낮춰주는 사이트를 제작
